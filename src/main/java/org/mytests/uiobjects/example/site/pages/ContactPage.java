@@ -6,7 +6,7 @@ import com.epam.jdi.uitests.web.selenium.elements.composite.WebPage;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JPage;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.simple.ById;
 
-@JPage(url = "/page1.htm")
+@JPage(url = "/contacts.html")
 public class ContactPage extends WebPage {
     @ById("Description")       public ITextArea description;
     @ById("accept-conditions") public ICheckBox acceptConditions;

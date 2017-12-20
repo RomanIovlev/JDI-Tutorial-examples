@@ -8,7 +8,7 @@ import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JPage;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.simple.ByText;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.simple.Css;
 
-@JPage(url = "/page4.htm")
+@JPage(url = "/dates.html")
 public class DatesPage extends WebPage {
     @Css("#datepicker input") public IDatePicker date;
     @ByText("Add your image") public RFileInput addFile;

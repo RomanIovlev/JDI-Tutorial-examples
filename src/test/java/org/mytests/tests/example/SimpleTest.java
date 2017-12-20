@@ -11,7 +11,7 @@ import static org.mytests.uiobjects.example.site.JDIExampleSite.*;
 
 public class SimpleTest extends SimpleTestsInit {
 
-    //@Test
+    @Test
     public void loginTest() {
         login();
         homePage.shouldBeOpened();
