@@ -1,10 +1,12 @@
 package org.mytests.uiobjects.example.site;
 
 import com.epam.jdi.uitests.web.selenium.elements.common.Label;
+import com.epam.jdi.uitests.web.selenium.elements.complex.Menu;
 import com.epam.jdi.uitests.web.selenium.elements.composite.WebSite;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JSite;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.simple.Css;
 import org.mytests.uiobjects.example.entities.User;
+import org.mytests.uiobjects.example.enums.NavigationEnum;
 import org.mytests.uiobjects.example.site.pages.ContactPage;
 import org.mytests.uiobjects.example.site.pages.DatesPage;
 import org.mytests.uiobjects.example.site.pages.HomePage;
@@ -18,6 +20,7 @@ public class JDIExampleSite extends WebSite {
     public static DatesPage datesPage;
     public static LoginForm loginForm;
     @Css(".profile-photo") static Label profilePhoto;
+    @Css(".nav li a") public static Menu<NavigationEnum> navigation;
 
     @Step
     public static void login() {
