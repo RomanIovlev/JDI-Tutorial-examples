@@ -5,6 +5,8 @@ import com.epam.web.matcher.testng.Check;
 import org.mytests.uiobjects.example.entities.User;
 import org.testng.annotations.Test;
 
+import java.time.LocalTime;
+
 import static com.epam.web.matcher.testng.Assert.*;
 import static org.mytests.uiobjects.example.data.ExpectedTexts.HOMEPAGE_MAINTEXT;
 import static org.mytests.uiobjects.example.data.ExpectedTexts.HOMEPAGE_TITLE;
@@ -37,6 +39,7 @@ public class SimpleTest extends SimpleTestsInit {
         isTrue(contactPage.acceptConditions.isChecked());
 
         datesPage.open();
+        datesPage.time.inputTime(LocalTime.of(8, 35));
         String date = "20/11/2017";
         datesPage.date.newInput(date);
         areEquals(datesPage.date.getValue(), date);

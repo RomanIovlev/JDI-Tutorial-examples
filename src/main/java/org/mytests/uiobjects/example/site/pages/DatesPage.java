@@ -7,10 +7,12 @@ import com.epam.jdi.uitests.web.selenium.elements.composite.WebPage;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JPage;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.simple.ByText;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.simple.Css;
+import org.mytests.uiobjects.example.site.custom.TimePicker;
 
 @JPage(url = "/dates.html")
 public class DatesPage extends WebPage {
     @Css("#datepicker input") public IDatePicker date;
+    @Css("#timepicker")       public TimePicker time;
     @ByText("Add your image") public RFileInput addFile;
-    @Css(".filename") public ILabel addFileLabel;
+    @Css(".filename")         public ILabel addFileLabel;
 }
